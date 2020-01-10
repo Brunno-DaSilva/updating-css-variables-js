@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Updating CSS Varables with JS</title>
+    <title>DarkSide Image Editor</title>
 
     <!--Main Style -->
     <link rel="stylesheet" href="style.css">
 
-     <!--FontAwesome -->
-     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-     integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+    <!--FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
 
 </head>
 
@@ -25,30 +25,40 @@
                         alt="logo" />
                 </div>
                 <div><a href="#">Home</a></div>
-                <div><a href="#">About</a></div>
+                <div><a href="./about.html">About</a></div>
                 <div><a href="#">Contact</a></div>
             </div>
         </div>
         <div class="title">
-            <h1>Update CSS Variables with <span class='hl'>JS</span></h2>
+            <h1>DarkSide<span class='hl'> Image Editor</span></h2>
         </div>
         <br>
 
     </header>
     <div class="container">
-            <div class="controls">
-              <label for="spacing">Spacing:</label>
-              <input id="spacing" type="range" name="spacing" min="10" max="200" value="10" data-sizing="px">
-          
-              <label for="blur">Blur:</label>
-              <input id="blur" type="range" name="blur" min="0" max="25" value="10" data-sizing="px">
-          
-              <label for="base">Base Color</label>
-              <input id="base" type="color" name="base" value="#ffc600">
+        <div class="controls">
+            <div>
+                <label for="spacing">Spacing:</label>
+                <input id="spacing" type="range" name="spacing" min="10" max="200" value="10" data-sizing="px">
             </div>
-          
-            <img class="main-img" src="https://source.unsplash.com/7bwQXzbF6KE/800x500">
-          
+            <div>
+                <label for="blur">Blur:</label>
+                <input id="blur" type="range" name="blur" min="0" max="25" value="10" data-sizing="px">
+            </div>
+            <div>
+                <label for="grayscale">Grayscale:</label>
+                <input id="grayscale" type="range" name="grayscale" min="0" max="100" value="5" data-sizing="%">
+
+            </div>
+            <div>
+                <label for="base">Base Color</label>
+                <input id="base" type="color" name="base" value="#2b498b">
+            </div>
+        </div>
+
+        <img class="main-img" src="http://www.facetheforce.today/darthvader">
+
+
     </div>
     <script src="index.js"></script>
 </body>

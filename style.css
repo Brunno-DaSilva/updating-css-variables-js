@@ -9,23 +9,22 @@
     --details-light-blue: #BEE0EA;
 
     /*CSS Variables to be altered*/
-    --base: #ffc600;
+    --base: #2b498b;
     --spacing: 10px;
     --blur: 10px; 
-
+    --grayscale: 20%;
 }
 
     body {
       padding: 0;
       margin: 0;
       text-align: center;
-      background: #193549;
+      background: #0c151b;
       color: white;
       font-family: 'helvetica neue', sans-serif;
-      font-weight: 100;
-      font-size: 50px;
+      font-weight: 80;
+      font-size: 30px;
     }
-
 
 
   /*///////////////////////////
@@ -71,12 +70,12 @@
 .title h1{
   font-family: 'Rock Salt', cursive;
   text-align: center;
-  font-size:5rem;
+  font-size:3rem;
   color: var(--color-title);
 }
 
 .title h1 i{
-  color: var(--color-steal-blue);
+  color: var(--details-light-blue);
 }
   
 /*///////////////////////////
@@ -86,18 +85,23 @@
 
     .controls {
       margin-bottom: 50px;
+      display: flex;
+      flex-direction: column; 
+      justify-content: flex-start; 
+      align-content: center;
+      align-items: center;
     }
 
     
-    input {
-      width: 100px;
+    input, label {
+      width: 60px;
     }
 
        
     .main-img {
       padding: var(--spacing); 
       background: var(--base);
-      filter: blur(var(--blur))
+      filter: blur(var(--blur)) grayscale(var(--grayscale));
     }
 
     .hl{
