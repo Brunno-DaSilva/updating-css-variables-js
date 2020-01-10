@@ -15,10 +15,6 @@
 
 }
 
- /*
-      misc styles, nothing to do with CSS variables
-    */
-
     body {
       padding: 0;
       margin: 0;
@@ -31,10 +27,6 @@
     }
 
 
-    .main-img {
-      padding: var(--spacing); 
-      background: var(--base);
-    }
 
   /*///////////////////////////
   //    HEADER Nav Style
@@ -101,4 +93,13 @@
       width: 100px;
     }
 
-   
+       
+    .main-img {
+      padding: var(--spacing); 
+      background: var(--base);
+      filter: blur(var(--blur))
+    }
+
+    .hl{
+      color: var(--base);
+    }
