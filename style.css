@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt&display=swap');
+
+:root {
+    --main-bg: #343d46;
+    --color-light: #f7f4f4;
+    --color-light-gray: #a7adba;
+    --color-title: #6A7687;
+    --color-steal-blue: #9DC1D9;
+    --details-light-blue: #BEE0EA;
+
+    /*CSS Variables to be altered*/
+    --base: #ffc600;
+    --spacing: 10px;
+    --blur: 10px; 
+
+}
+
+ /*
+      misc styles, nothing to do with CSS variables
+    */
+
+    body {
+      padding: 0;
+      margin: 0;
+      text-align: center;
+      background: #193549;
+      color: white;
+      font-family: 'helvetica neue', sans-serif;
+      font-weight: 100;
+      font-size: 50px;
+    }
+
+
+    .main-img {
+      padding: var(--spacing); 
+      background: var(--base);
+    }
+
+  /*///////////////////////////
+  //    HEADER Nav Style
+  ///////////////////////////*/
+
+  
+.navbar {
+  height: 50px;
+  background-color: var(--main-bg);
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid var(--details-light-blue);
+}
+
+.navbar img{
+  width: 25px;
+  height: auto;
+}
+.navbar a{
+ text-decoration: none;
+ color: var(--color-light); 
+ letter-spacing: 1px;
+ padding: 10px;
+ font-size: 15px;
+ font-family: 'Muli', sans-serif;
+}
+.navbar a:hover{
+  color: var(--color-light-gray);
+}
+
+.navbar-items{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.title h1{
+  font-family: 'Rock Salt', cursive;
+  text-align: center;
+  font-size:5rem;
+  color: var(--color-title);
+}
+
+.title h1 i{
+  color: var(--color-steal-blue);
+}
+  
+/*///////////////////////////
+// END - Navigation Style
+///////////////////////////*/
+
+
+    .controls {
+      margin-bottom: 50px;
+    }
+
+    
+    input {
+      width: 100px;
+    }
+
+   
