@@ -13,4 +13,4 @@
 ```
 
 
-#### Demo: https://dasilvabrunotexas.github.io/updating-css-variables-js/
+### Demo: https://brunno-dasilva.github.io/updating-css-variables-js/
